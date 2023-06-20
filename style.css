@@ -1,0 +1,89 @@
+
+body{
+    background-attachment: fixed;
+    background: rgb(252,143,168);
+    background: linear-gradient(233deg, rgba(252,143,168,1) 0%, rgba(75,37,119,1) 100%);
+    background-attachment: fixed;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+}
+.container {
+    
+    
+    position: relative;
+    padding: 15px;
+   
+    height: auto;
+    width: 300px;
+    background-color: white;
+    margin: 20vh auto  0 auto;
+    border-radius: 10px;
+}
+.inputItem{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+.container h1{
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(233deg, rgba(252,143,168,1) 0%, rgba(75,37,119,1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.container button{
+  
+    background: linear-gradient(233deg, rgba(252,143,168,1) 0%, rgba(75,37,119,1) 100%);
+    border: none;
+    width: 100%;
+     border-radius:5px ;
+     color: white;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 5px;
+    height: 28px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.inputItem input:focus{
+    transition: all 80ms  linear;
+    
+    border-bottom: 3px solid rgba(71, 153, 204, 0.933);
+  }
+
+.inputItem input{
+   border: 0;
+   border-bottom: 3px  black;
+  outline: none;
+   background-color: rgba(128, 128, 128, 0.1) ;
+   border-radius: 5px;
+   margin: 3px;
+
+}
+
+ #tick{
+   
+ 
+   cursor: pointer;
+   
+    background-color: #eee;
+    border-radius:50%
+}
+.inputItem label{
+    font-size: 13px;
+    font-weight: bold;
+    
+}
+.inputItem .error{
+    color: red;
+    height: 8px;
+    margin-bottom: 5px;
+}
+.inputItem.error input{
+    border-bottom: 3px solid red ;
+}
+.inputItem.success input{
+    border-bottom: 3px solid green ;
+}
